@@ -1,0 +1,10 @@
+D:\BMS\Bin\BUS.dll
+D:\BMS\Bin\BUS.pdb
+D:\BMS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\BMS\BUS\obj\Debug\BUS.dll
+D:\BMS\BUS\obj\Debug\BUS.pdb
+D:\Subjects\BMS\Bin\BUS.dll
+D:\Subjects\BMS\Bin\BUS.pdb
+D:\Subjects\BMS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\Subjects\BMS\BUS\obj\Debug\BUS.dll
+D:\Subjects\BMS\BUS\obj\Debug\BUS.pdb
