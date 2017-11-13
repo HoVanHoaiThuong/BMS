@@ -44,12 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BillsBUS.cs" />
-    <Compile Include="CustomersBUS.cs" />
-    <Compile Include="OrderDetailsBUS.cs" />
-    <Compile Include="OrdersBUS.cs" />
-    <Compile Include="PromotionsBUS.cs" />
+    <Compile Include="AuthorsBUS.cs" />
+    <Compile Include="BooksBUS.cs" />
+    <Compile Include="CategoriesBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublishersBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">

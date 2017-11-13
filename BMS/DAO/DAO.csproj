@@ -45,13 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppSetting.cs" />
-    <Compile Include="BillsDAO.cs" />
-    <Compile Include="CustomersDAO.cs" />
+    <Compile Include="AuthorsDAO.cs" />
+    <Compile Include="BooksDAO.cs" />
+    <Compile Include="CategoriesDAO.cs" />
     <Compile Include="DataProvider.cs" />
-    <Compile Include="OrderDetailsDAO.cs" />
-    <Compile Include="OrdersDAO.cs" />
-    <Compile Include="PromotionsDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublishersDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

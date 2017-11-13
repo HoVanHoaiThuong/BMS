@@ -86,15 +86,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\frmAccountSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmAccountSetting.Designer.cs">
+      <DependentUpon>frmAccountSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class\frmAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Class\frmAddCustomer.Designer.cs">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\frmBillsMngmt.cs" />
+    <Compile Include="Class\frmAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmAuthor.Designer.cs">
+      <DependentUpon>frmAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmBillsMngmt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Class\frmBillsMngmt.Designer.cs">
       <DependentUpon>frmBillsMngmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmBook.Designer.cs">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\frmCustomer.cs">
       <SubType>UserControl</SubType>
@@ -102,9 +128,29 @@
     <Compile Include="Class\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\frmPromotion.cs" />
+    <Compile Include="Class\frmEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmPromotion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Class\frmPromotion.Designer.cs">
       <DependentUpon>frmPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmPublisher.Designer.cs">
+      <DependentUpon>frmPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmBackupDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmBackupDB.Designer.cs">
+      <DependentUpon>frmBackupDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\frmSales.cs">
       <SubType>UserControl</SubType>
@@ -112,22 +158,112 @@
     <Compile Include="Class\frmSales.Designer.cs">
       <DependentUpon>frmSales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\pnAuthentication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnAuthentication.Designer.cs">
+      <DependentUpon>pnAuthentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmRestoreDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmRestoreDB.Designer.cs">
+      <DependentUpon>frmRestoreDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnClose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnClose.Designer.cs">
+      <DependentUpon>pnClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnExit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnExit.Designer.cs">
+      <DependentUpon>pnExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBMS.Designer.cs">
+      <DependentUpon>frmBMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnLogin.Designer.cs">
+      <DependentUpon>pnLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnSlider.Designer.cs">
+      <DependentUpon>pnSlider.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Class\frmAccountSetting.resx">
+      <DependentUpon>frmAccountSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Class\frmAddCustomer.resx">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmAuthor.resx">
+      <DependentUpon>frmAuthor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Class\frmBillsMngmt.resx">
       <DependentUpon>frmBillsMngmt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmBook.resx">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Class\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Class\frmPromotion.resx">
       <DependentUpon>frmPromotion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmPublisher.resx">
+      <DependentUpon>frmPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmBackupDB.resx">
+      <DependentUpon>frmBackupDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Class\frmSales.resx">
       <DependentUpon>frmSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnAuthentication.resx">
+      <DependentUpon>pnAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmRestoreDB.resx">
+      <DependentUpon>frmRestoreDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnClose.resx">
+      <DependentUpon>pnClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnExit.resx">
+      <DependentUpon>pnExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBMS.resx">
+      <DependentUpon>frmBMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnLogin.resx">
+      <DependentUpon>pnLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnSlider.resx">
+      <DependentUpon>pnSlider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,6 +275,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <Fakes Include="Fakes\BUS.fakes" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DTO.Authors.datasource" />
