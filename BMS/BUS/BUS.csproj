@@ -44,12 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BillsBUS.cs" />
-    <Compile Include="CustomersBUS.cs" />
-    <Compile Include="OrderDetailsBUS.cs" />
-    <Compile Include="OrdersBUS.cs" />
-    <Compile Include="PromotionsBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EmployeesBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">
