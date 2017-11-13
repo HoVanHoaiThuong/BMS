@@ -22,6 +22,7 @@ namespace BMS.Class
         public frmBillsMngmt(Form owner) : base(owner)
         {
             InitializeComponent();
+            //dgvBill.Columns["Column7"].Visible = false;
         }
 
         private void linkBack_Click(object sender, EventArgs e)
@@ -85,18 +86,18 @@ namespace BMS.Class
                         sheet = wb.ActiveSheet;
                         sheet.Name = "Bills payment";
                         //Header
-                        sheet.Range[sheet.Cells[1, 1], sheet.Cells[1, dgvBill.Columns.Count-1]].Merge();
-                        sheet.Cells[1, 1].Value = "Bills payment [ " + startDate + " - " + endDate + " ]";
-                        sheet.Cells[1, 1].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
-                        sheet.Cells[1, 1].VerticalAlignment = Excel.Constants.xlCenter;
-                        sheet.Cells[1, 1].Font.Size = 13;
-                        sheet.Cells[1, 1].Font.Bold = true;
-                        sheet.Cells[1, 1].Font.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.White);
-                        sheet.Cells[1, 1].Interior.Color = Excel.XlRgbColor.rgbRed;
-                        sheet.Cells[1, 1].RowHeight = 30;
-                        sheet.Cells[1, 1].Borders.Weight = Excel.XlBorderWeight.xlThin;
+                        sheet.Range[sheet.Cells[1, 2], sheet.Cells[1, dgvBill.Columns.Count-1]].Merge();
+                        sheet.Cells[1, 2].Value = "Bills payment [ " + startDate + " - " + endDate + " ]";
+                        sheet.Cells[1, 2].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+                        sheet.Cells[1, 2].VerticalAlignment = Excel.Constants.xlCenter;
+                        sheet.Cells[1, 2].Font.Size = 13;
+                        sheet.Cells[1, 2].Font.Bold = true;
+                        sheet.Cells[1, 2].Font.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.White);
+                        sheet.Cells[1, 2].Interior.Color = Excel.XlRgbColor.rgbRed;
+                        sheet.Cells[1, 2].RowHeight = 30;
+                        sheet.Cells[1, 2].Borders.Weight = Excel.XlBorderWeight.xlThin;
                         //Tieu de cot
-                        for (int i = 1; i <= dgvBill.Columns.Count-1; i++)
+                        for (int i = 2; i <= dgvBill.Columns.Count-1; i++)
                         {
                             sheet.Cells[2, i] = dgvBill.Columns[i].HeaderText;
                             sheet.Cells[2, i].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
@@ -106,7 +107,7 @@ namespace BMS.Class
                         //Lay du lieu
                         for (int i = 1; i <= dgvBill.Rows.Count; i++)
                         {
-                            for (int j = 0; j < dgvBill.Columns.Count-1; j++)
+                            for (int j = 1; j < dgvBill.Columns.Count-1; j++)
                             {
                                 sheet.Cells[i + 2, j+1] = dgvBill.Rows[i-1].Cells[j+1].Value.ToString();
                                 sheet.Cells[i + 2, j+1].HorizontalAlignment = Excel.XlHAlign.xlHAlignRight;
@@ -114,7 +115,7 @@ namespace BMS.Class
                             }
                         }
                         //Dinh dang do rong cho cac cot
-                        for (int k = 1; k <= dgvBill.Rows.Count; k++)
+                        for (int k = 2; k <= dgvBill.Rows.Count; k++)
                             ((Excel.Range)sheet.Cells[1, k + 1]).EntireColumn.AutoFit();
 
                         wb.SaveAs(sfd.FileName);
@@ -154,10 +155,26 @@ namespace BMS.Class
                 }
             }
 
+            if (dgvBill.Columns[e.ColumnIndex] is DataGridViewButtonColumn && dgvBill.Columns[e.ColumnIndex].HeaderText == "Details")
+            {
+                int orderID = (int)dgvBill.SelectedCells[0].OwningRow.Cells["Column1"].Value;
+                try
+                {
+                    frmBillInfo f = new frmBillInfo();
+                    f.getter(orderID.ToString());
+                    f.ShowDialog();
+                }
+                catch (SqlException ex)
+                {
+                    MetroMessageBox.Show(this, ex.Message, "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
             int orderID = (int)dgvBill.SelectedCells[0].OwningRow.Cells["Column1"].Value;
             try
             {
@@ -168,6 +185,15 @@ namespace BMS.Class
             {
                 MetroMessageBox.Show(this, ex.Message, "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btReport_Click(object sender, EventArgs e)
+        {
+            DateTime fromDate = dtStartDate.Value;
+            DateTime toDate = dtEndDate.Value;
+            frmReportForBillMngmt f = new frmReportForBillMngmt();
+            f.Getter(fromDate, toDate);
+            f.ShowDialog();
         }
     }
 }

@@ -113,6 +113,7 @@ namespace BMS.Class
         private void btUpdate_Click(object sender, EventArgs e)
         {
             objState = EntityState.Changed;
+            cbBookTitle.Enabled = false;
             pnPromotionInfo.Enabled = true;
             btSave.Enabled = true;
             btCancel.Enabled = true;
@@ -171,8 +172,8 @@ namespace BMS.Class
             try
             {
                 int bookID = (cbBookTitle.SelectedItem as Books).BookID;
-                DateTime? startDate = dtStartPromo.Value;
-                DateTime? endDate = dtEndPromo.Value;
+                DateTime startDate = Convert.ToDateTime(dtStartPromo.Text);
+                DateTime endDate = Convert.ToDateTime(dtEndPromo.Text);
                 int discount = (int)numericDiscount.Value;
                 string status = txtStatus.Text;
 
@@ -222,6 +223,7 @@ namespace BMS.Class
                         }
                     }
                     objState = EntityState.Unchanged;
+                    cbBookTitle.Enabled = true;
                 }
                 else
                 {
@@ -246,6 +248,7 @@ namespace BMS.Class
             {
                 MetroMessageBox.Show(this, "Please enter (a) keyword(s) into the search box.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
+            btRefresh.Enabled = true;
         }
     }
 }

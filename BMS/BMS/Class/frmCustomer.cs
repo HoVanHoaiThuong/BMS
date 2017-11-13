@@ -199,10 +199,20 @@ namespace BMS.Class
         {
             try
             {
+                if (string.IsNullOrWhiteSpace(txtFullName.Text) || string.IsNullOrWhiteSpace(txtAddress.Text) || string.IsNullOrWhiteSpace(txtPhone.Text))
+                {
+                    MetroMessageBox.Show(this, "The value cannot be empty or invalid. Please try again!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                    return;
+                }
                 string fullName = txtFullName.Text;
                 DateTime? dob = dtDOB.Value;
                 bool? gender = (chkGender.Checked) ? true : false;
                 string address = txtAddress.Text;
+                if (txtPhone.Text.Length < 10)
+                {
+                    MetroMessageBox.Show(this, "The value of 'customer Phone' is invalid. Please try again!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                    return;
+                }
                 string phone = txtPhone.Text;
                 byte[] img = ImageByteArray;
                 int points = Convert.ToInt32(txtPoints.Text);
@@ -267,23 +277,29 @@ namespace BMS.Class
             }
         }
 
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || (int)e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+            uint x;
+            if (uint.TryParse(txtPhone.Text, out x) && txtPhone.Text.Length > 9 && txtPhone.Text.Length < 13)
+            {
+                txtPhone.ForeColor = Color.Black;
+            }
+            else
+            {
+                txtPhone.ForeColor = Color.Red;
+            }
+        }
     }
 }

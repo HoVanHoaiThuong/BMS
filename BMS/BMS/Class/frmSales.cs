@@ -22,6 +22,7 @@ namespace BMS.Class
         public event EventHandler SettingClosed;
         public delegate void SendAccount(string userName, string empName);
         public SendAccount Sender;
+      
         public static string acc;
         BindingSource ListBook = new BindingSource();
         public static double totalPrice = 0;
@@ -167,9 +168,14 @@ namespace BMS.Class
                             OrderDetailsBUS.Instance.InsertOrderDetails(OrdersBUS.Instance.GetMaxOrderID(), bookID, quantity);
                           
                         }
+                        else
+                        {
+                            MetroMessageBox.Show(this, "The quantity of product is invalid. Please try again!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                        }
                     }
                     else if(orderID != -1)
                     {
+                        dtOrderDate.Value = OrdersBUS.Instance.GetOrderDateByID(orderID);
                         if (!OrderDetailsBUS.Instance.CheckBookExists(bookID, orderID))
                         {
                             if (quantity >= 1)
@@ -178,7 +184,7 @@ namespace BMS.Class
                             }
                             else
                             {
-                                MetroMessageBox.Show(this, "So luong khong hop le!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MetroMessageBox.Show(this, "The quantity of product is invalid. Please try again!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                         else
@@ -190,7 +196,9 @@ namespace BMS.Class
                 }
                 else
                 {
-                    MetroMessageBox.Show(this, "So luong sach trong kho khong dap ung duoc nhu cau", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MetroMessageBox.Show(this, "Sorry! The quantity of products in stock does not meet the demand.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    numericQuantity.Value = 1;
+                    return;
                 }
             }
             catch(SqlException ex)
@@ -216,7 +224,8 @@ namespace BMS.Class
 
                     foreach (Bills item in listBill)
                     {
-                        ListViewItem lvItem = new ListViewItem(item.BookTitle.ToString());
+                        ListViewItem lvItem = new ListViewItem(item.BookID.ToString());
+                        lvItem.SubItems.Add(item.BookTitle.ToString());
                         lvItem.SubItems.Add(item.Quantity.ToString());
                         lvItem.SubItems.Add(item.UnitPrice.ToString());
                         lvItem.SubItems.Add(item.Discount.ToString());
@@ -245,7 +254,6 @@ namespace BMS.Class
 
         private void btPay_Click(object sender, EventArgs e)
         {
-            
             int orderID = OrdersBUS.Instance.GetUncheckOrder();
             if (orderID != -1)
             {
@@ -253,10 +261,19 @@ namespace BMS.Class
                 {
                     OrdersBUS.Instance.CheckOut(orderID, (float)totalPrice);
                     MetroMessageBox.Show(this, "Paid successfully.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    //Open report
+                   
+                    frmBillInfo f = new frmBillInfo();
+                    f.Getter(txtOrderID.Text, dtOrderDate.Text, txtEmpName.Text, cbCustomerName.Text);
+                    f.ShowDialog();
+                   
                     ShowBill();
                 }
             }
         }
+
+
+
+
     }
 }
