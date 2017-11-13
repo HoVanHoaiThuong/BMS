@@ -1,0 +1,30 @@
+D:\BMS\Bin\DTO.dll
+D:\BMS\Bin\DTO.pdb
+D:\BMS\DTO\obj\Debug\DTO.dll
+D:\BMS\DTO\obj\Debug\DTO.pdb
+D:\BMS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Subjects\BMS\Bin\DTO.dll
+D:\Subjects\BMS\Bin\DTO.pdb
+D:\Subjects\BMS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Subjects\BMS\DTO\obj\Debug\DTO.dll
+D:\Subjects\BMS\DTO\obj\Debug\DTO.pdb
+C:\Users\B\Downloads\BMS\Bin\DTO.dll
+C:\Users\B\Downloads\BMS\Bin\DTO.pdb
+C:\Users\B\Downloads\BMS\DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\B\Downloads\BMS\DTO\obj\Debug\DTO.dll
+C:\Users\B\Downloads\BMS\DTO\obj\Debug\DTO.pdb
+E:\BMS\Bin\DTO.dll
+E:\BMS\Bin\DTO.pdb
+E:\BMS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\BMS\DTO\obj\Debug\DTO.dll
+E:\BMS\DTO\obj\Debug\DTO.pdb
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\Bin\DTO.dll
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\Bin\DTO.pdb
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\DTO\obj\Debug\DTO.dll
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\DTO\obj\Debug\DTO.pdb
+D:\BMS\BMS\Bin\DTO.dll
+D:\BMS\BMS\Bin\DTO.pdb
+D:\BMS\BMS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\BMS\BMS\DTO\obj\Debug\DTO.dll
+D:\BMS\BMS\DTO\obj\Debug\DTO.pdb
