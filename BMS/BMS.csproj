@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F7C57B0-71E6-44EC-9E8E-07A7EBF8E36A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BMS</RootNamespace>
+    <AssemblyName>BMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\MetroFramework V1.4.0\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\MetroFramework V1.4.0\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\MetroFramework V1.4.0\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="SplashScreen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SplashScreen.Winforms.1.0.0\lib\SplashScreen.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookstoreDBDataSet.cs">
+      <DependentUpon>BookstoreDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookstoreDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookstoreDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmAccountSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmAccountSetting.Designer.cs">
+      <DependentUpon>frmAccountSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmAddCustomer.Designer.cs">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmAuthor.Designer.cs">
+      <DependentUpon>frmAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmBillInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmBillInfo.Designer.cs">
+      <DependentUpon>frmBillInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmBillsMngmt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmBillsMngmt.Designer.cs">
+      <DependentUpon>frmBillsMngmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmBook.Designer.cs">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmPromotion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmPromotion.Designer.cs">
+      <DependentUpon>frmPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmPublisher.Designer.cs">
+      <DependentUpon>frmPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmBackupDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmBackupDB.Designer.cs">
+      <DependentUpon>frmBackupDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmReportForBillMngmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\frmReportForBillMngmt.Designer.cs">
+      <DependentUpon>frmReportForBillMngmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmSales.Designer.cs">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnAuthentication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnAuthentication.Designer.cs">
+      <DependentUpon>pnAuthentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\frmRestoreDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\frmRestoreDB.Designer.cs">
+      <DependentUpon>frmRestoreDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnClose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnClose.Designer.cs">
+      <DependentUpon>pnClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnExit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnExit.Designer.cs">
+      <DependentUpon>pnExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBMS.Designer.cs">
+      <DependentUpon>frmBMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnLogin.Designer.cs">
+      <DependentUpon>pnLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\pnSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\pnSlider.Designer.cs">
+      <DependentUpon>pnSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Class\frmAccountSetting.resx">
+      <DependentUpon>frmAccountSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmAuthor.resx">
+      <DependentUpon>frmAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmBillInfo.resx">
+      <DependentUpon>frmBillInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmBillsMngmt.resx">
+      <DependentUpon>frmBillsMngmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmBook.resx">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmPromotion.resx">
+      <DependentUpon>frmPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmPublisher.resx">
+      <DependentUpon>frmPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmBackupDB.resx">
+      <DependentUpon>frmBackupDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmReportForBillMngmt.resx">
+      <DependentUpon>frmReportForBillMngmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmSales.resx">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnAuthentication.resx">
+      <DependentUpon>pnAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\frmRestoreDB.resx">
+      <DependentUpon>frmRestoreDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnClose.resx">
+      <DependentUpon>pnClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnExit.resx">
+      <DependentUpon>pnExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\RptBillMngmt.rdlc" />
+    <EmbeddedResource Include="Class\Report2.rdlc" />
+    <EmbeddedResource Include="frmBMS.resx">
+      <DependentUpon>frmBMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnLogin.resx">
+      <DependentUpon>pnLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\pnSlider.resx">
+      <DependentUpon>pnSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BookstoreDBDataSet.xsc">
+      <DependentUpon>BookstoreDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookstoreDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookstoreDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookstoreDBDataSet.xss">
+      <DependentUpon>BookstoreDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DTO.Authors.datasource" />
+    <None Include="Properties\DataSources\DTO.Books.datasource" />
+    <None Include="Properties\DataSources\DTO.Categories.datasource" />
+    <None Include="Properties\DataSources\DTO.Publishers.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Class\App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{a2464714-ecf9-4f41-a81f-b298dad5eaa3}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{7120C1A2-13DE-40A8-8727-EE18FFFCDA59}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{8415358C-8956-4B3F-ADCA-D7265E37CE1F}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

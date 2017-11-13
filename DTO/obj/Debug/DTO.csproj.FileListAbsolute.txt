@@ -1,0 +1,10 @@
+D:\BMS\Bin\DTO.dll
+D:\BMS\Bin\DTO.pdb
+D:\BMS\DTO\obj\Debug\DTO.dll
+D:\BMS\DTO\obj\Debug\DTO.pdb
+D:\BMS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Subjects\BMS\Bin\DTO.dll
+D:\Subjects\BMS\Bin\DTO.pdb
+D:\Subjects\BMS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Subjects\BMS\DTO\obj\Debug\DTO.dll
+D:\Subjects\BMS\DTO\obj\Debug\DTO.pdb
