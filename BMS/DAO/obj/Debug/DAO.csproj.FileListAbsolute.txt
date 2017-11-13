@@ -1,0 +1,30 @@
+D:\BMS\Bin\DAO.dll
+D:\BMS\Bin\DAO.pdb
+D:\BMS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\BMS\DAO\obj\Debug\DAO.dll
+D:\BMS\DAO\obj\Debug\DAO.pdb
+D:\Subjects\BMS\Bin\DAO.dll
+D:\Subjects\BMS\Bin\DAO.pdb
+D:\Subjects\BMS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\Subjects\BMS\DAO\obj\Debug\DAO.dll
+D:\Subjects\BMS\DAO\obj\Debug\DAO.pdb
+C:\Users\B\Downloads\BMS\Bin\DAO.dll
+C:\Users\B\Downloads\BMS\Bin\DAO.pdb
+C:\Users\B\Downloads\BMS\DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\B\Downloads\BMS\DAO\obj\Debug\DAO.dll
+C:\Users\B\Downloads\BMS\DAO\obj\Debug\DAO.pdb
+E:\BMS\Bin\DAO.dll
+E:\BMS\Bin\DAO.pdb
+E:\BMS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+E:\BMS\DAO\obj\Debug\DAO.dll
+E:\BMS\DAO\obj\Debug\DAO.pdb
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\Bin\DAO.dll
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\Bin\DAO.pdb
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\DAO\obj\Debug\DAO.dll
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\DAO\obj\Debug\DAO.pdb
+D:\BMS\BMS\Bin\DAO.dll
+D:\BMS\BMS\Bin\DAO.pdb
+D:\BMS\BMS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\BMS\BMS\DAO\obj\Debug\DAO.dll
+D:\BMS\BMS\DAO\obj\Debug\DAO.pdb

@@ -1,0 +1,30 @@
+D:\BMS\Bin\BUS.dll
+D:\BMS\Bin\BUS.pdb
+D:\BMS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\BMS\BUS\obj\Debug\BUS.dll
+D:\BMS\BUS\obj\Debug\BUS.pdb
+D:\Subjects\BMS\Bin\BUS.dll
+D:\Subjects\BMS\Bin\BUS.pdb
+D:\Subjects\BMS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\Subjects\BMS\BUS\obj\Debug\BUS.dll
+D:\Subjects\BMS\BUS\obj\Debug\BUS.pdb
+C:\Users\B\Downloads\BMS\Bin\BUS.dll
+C:\Users\B\Downloads\BMS\Bin\BUS.pdb
+C:\Users\B\Downloads\BMS\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\B\Downloads\BMS\BUS\obj\Debug\BUS.dll
+C:\Users\B\Downloads\BMS\BUS\obj\Debug\BUS.pdb
+E:\BMS\Bin\BUS.dll
+E:\BMS\Bin\BUS.pdb
+E:\BMS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+E:\BMS\BUS\obj\Debug\BUS.dll
+E:\BMS\BUS\obj\Debug\BUS.pdb
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\Bin\BUS.dll
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\Bin\BUS.pdb
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\BUS\obj\Debug\BUS.dll
+D:\Tai Lieu\btl kiem thu phan mem\BMS-new\BUS\obj\Debug\BUS.pdb
+D:\BMS\BMS\Bin\BUS.dll
+D:\BMS\BMS\Bin\BUS.pdb
+D:\BMS\BMS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\BMS\BMS\BUS\obj\Debug\BUS.dll
+D:\BMS\BMS\BUS\obj\Debug\BUS.pdb
