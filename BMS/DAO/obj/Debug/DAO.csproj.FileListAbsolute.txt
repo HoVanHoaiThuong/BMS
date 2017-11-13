@@ -8,3 +8,8 @@ D:\Subjects\BMS\Bin\DAO.pdb
 D:\Subjects\BMS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 D:\Subjects\BMS\DAO\obj\Debug\DAO.dll
 D:\Subjects\BMS\DAO\obj\Debug\DAO.pdb
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\Bin\DAO.dll
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\Bin\DAO.pdb
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\DAO\obj\Debug\DAO.dll
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\DAO\obj\Debug\DAO.pdb

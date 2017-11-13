@@ -8,3 +8,8 @@ D:\Subjects\BMS\Bin\BUS.pdb
 D:\Subjects\BMS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\Subjects\BMS\BUS\obj\Debug\BUS.dll
 D:\Subjects\BMS\BUS\obj\Debug\BUS.pdb
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\Bin\BUS.dll
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\Bin\BUS.pdb
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\BUS\obj\Debug\BUS.dll
+C:\Users\HENRY'sCOMPUTER\Desktop\master\BMS\BMS\BUS\obj\Debug\BUS.pdb
